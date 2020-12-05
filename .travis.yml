@@ -1,14 +1,18 @@
 language: java
 sudo: true
 
-script:
-  - mvn clean verify
+#script:
 
 after_success:
 after_failure:
 
 before_install:
   - chmod +x mvnw
+
+
+cache:
+  directories:
+    - .m2
 
 #jdk:
 #  - oraclejdk8
