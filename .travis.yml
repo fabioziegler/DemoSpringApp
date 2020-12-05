@@ -1,11 +1,14 @@
 language: java
-sudo: false
+sudo: true
 
 script:
   - mvn clean verify
 
 after_success:
 after_failure:
+
+before_install:
+  - chmod +x mvnw
 
 #jdk:
 #  - oraclejdk8
