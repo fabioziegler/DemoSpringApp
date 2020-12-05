@@ -7,5 +7,5 @@ script:
 after_success:
 after_failure:
 
-jdk:
-  - oraclejdk8
+#jdk:
+#  - oraclejdk8

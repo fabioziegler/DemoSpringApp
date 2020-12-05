@@ -18,7 +18,7 @@ public class DemoSpringApp {
 
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("Hello %s!", name);
+		return String.format("Hello %s! How are you?", name);
 	}
 
 }
